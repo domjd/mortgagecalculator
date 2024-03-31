@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="calculator">
+        <div class="row">
+          <div class="col-25">
+            <label for="lamount">Principal Loan Amount </label>
+          </div>
+          <div class="col-75">
+            <select id="amountrequired" name="amountrequired">
+              <option value="" disabled selected hidden>Loan Amount</option>
+              <option value="25000">£25,000</option>
+              <option value="30000">£30,000</option>
+              <option value="40000">£40,000</option>
+              <option value="50000">£50,000</option>
+              <option value="75000">£75,000</option>
+              <option value="100000">£100,000</option>
+              <option value="125000">£125,000</option>
+              <option value="150000">£150,000</option>
+              <option value="200000">£200,000</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="temp">Loan Term:</label><br />
+          <input
+            type="range"
+            id="termslider"
+            class="slider"
+            name="temp"
+            min="3"
+            max="15"
+            list="markers"
+            step="1"
+            value="3"
+          />
+
+          <datalist id="markers">
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+            <option value="11"></option>
+            <option value="12"></option>
+            <option value="13"></option>
+            <option value="14"></option>
+            <option value="15"></option>
+          </datalist>
+          <p id="termtext">Loan Term: 3 years</p>
+        </div>
+
+        <div class="row" style="text-align: center">
+          <p id="monthlypaymenttext">Monthly Payment: £</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
