@@ -3,14 +3,10 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-/* Style the container */
-.container {
-}
 
 form {
   border-radius: 12px;
   padding: 12px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .row {
